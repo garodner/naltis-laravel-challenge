@@ -50,7 +50,6 @@ class VehicleController extends Controller
             $new_v->model = $request->model;
             $new_v->make = $request->make;
             $new_v->year = $request->year;
-            $new_v->type = $request->type;
             $new_v->save();
 
             return redirect()->back()->with('message', 'Vehicle Added Succesfully');
