@@ -19,6 +19,7 @@ class CreateVehiclesTable extends Migration
             $table->string('make');
             $table->year('year');
             $table->string('type')->default('App\Vehicle');
+            $table->integer('likes')->default(0);
             $table->timestamps();
         });
     }
